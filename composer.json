@@ -1,5 +1,5 @@
 {
-    "name": "mp/php-mvc-core",
+    "name": "matejpal/php-mvc-core",
     "autoload": {
         "psr-4": {
             "Mp\\PhpMvcCore\\": "src/"
