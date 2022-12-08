@@ -1,13 +1,13 @@
 <?php
 /** User: Matej */
 
-namespace app\core;
+namespace matejpal\phpmvc;
 
 /**
  * Class Session
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core
+ * @package matejpal\phpmvc
  */
 
 class Session{

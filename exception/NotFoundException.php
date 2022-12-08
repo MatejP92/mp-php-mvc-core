@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\exception;
+namespace matejpal\phpmvc\exception;
 
 /**
  * Class NotFoundException
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\exception
+ * @package matejpal\phpmvc\exception
 */
 
 class NotFoundException extends \Exception {

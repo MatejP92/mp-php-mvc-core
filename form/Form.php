@@ -1,15 +1,15 @@
 <?php
 /** User: Matej */
 
-namespace app\core\form;
+namespace matejpal\phpmvc\form;
 
-use app\core\Model;
+use matejpal\phpmvc\Model;
 
 /**
  * Class Model
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\form
+ * @package matejpal\phpmvc\form
 */
 
 

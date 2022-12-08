@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core;
+namespace matejpal\phpmvc;
 
 /**
  * Class View
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core
+ * @package matejpal\phpmvc
 */
 
 

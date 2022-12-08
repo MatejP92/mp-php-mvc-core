@@ -1,14 +1,14 @@
 <?php
 /** User: Matej */
 
-namespace app\core\db;
-use app\core\Application;
+namespace matejpal\phpmvc\db;
+use matejpal\phpmvc\Application;
 
 /**
  * Class Database
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\db
+ * @package matejpal\phpmvc\db
 */
 
 class Database{

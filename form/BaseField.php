@@ -1,15 +1,15 @@
 <?php
 /** User: Matej */
 
-namespace app\core\form;
-use app\core\Model;
+namespace matejpal\phpmvc\form;
+use matejpal\phpmvc\Model;
 
 
 /**
  * Class BaseField
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\form
+ * @package matejpal\phpmvc\form
 */
 
 abstract class BaseField {
@@ -19,7 +19,7 @@ abstract class BaseField {
 
     /**
     * Field constructor.
-    * @param \app\core\Model $model
+    * @param \matejpal\phpmvc\Model $model
     * @param string $attribute
     */
 

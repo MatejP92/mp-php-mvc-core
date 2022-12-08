@@ -1,16 +1,16 @@
 <?php
 /** User: Matej */
 
-namespace app\core;
+namespace matejpal\phpmvc;
 
-use app\core\exception\NotFoundException;
+use matejpal\phpmvc\exception\NotFoundException;
 
 
 /**
  * Class Router
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core
+ * @package matejpal\phpmvc
  */
 
 
@@ -24,8 +24,8 @@ class Router
     /**
      * Router constructor
      * 
-     * @param \app\core\Request $request
-     * @param \app\core\Response $response
+     * @param \matejpal\phpmvc\Request $request
+     * @param \matejpal\phpmvc\Response $response
      */
     
     public function __construct(Request $request, Response $response)
@@ -58,7 +58,7 @@ class Router
         }
         if(is_array($callback)){
 
-            /** @var \app\core\Controller $controller */
+            /** @var \matejpal\phpmvc\Controller $controller */
 
             $controller =  new $callback[0]();
             Application::$app->controller = $controller;

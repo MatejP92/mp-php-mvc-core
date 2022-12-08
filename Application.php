@@ -1,15 +1,15 @@
 <?php
 /** User: Matej */
 
-namespace app\core;
+namespace matejpal\phpmvc;
 
-use app\core\db\Database;
+use matejpal\phpmvc\db\Database;
 
 /**
  * Class Aplication
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core
+ * @package matejpal\phpmvc
  */
 
 
@@ -68,18 +68,18 @@ class Application
 
     // getter
     /**
-     * @return \app\core\Controller
+     * @return \matejpal\phpmvc\Controller
      */
-    public function getController(): \app\core\Controller {
+    public function getController(): \matejpal\phpmvc\Controller {
         return $this->controller;
     }
 
 
     // setter
         /**
-     * @param \app\core\Controller $controller
+     * @param \matejpal\phpmvc\Controller $controller
      */
-    public function setController(\app\core\Controller $controller): void {
+    public function setController(\matejpal\phpmvc\Controller $controller): void {
         $this->controller = $controller;
     }
 

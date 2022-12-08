@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\middlewares;
+namespace matejpal\phpmvc\middlewares;
 
 /**
  * Class BaseMiddleware
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\middlewares
+ * @package matejpal\phpmvc\middlewares
 */
 
 abstract class BaseMiddleware{

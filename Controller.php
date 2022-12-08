@@ -1,15 +1,15 @@
 <?php
 /** User: Matej */
 
-namespace app\core;
+namespace matejpal\phpmvc;
 
-use app\core\middlewares\BaseMiddleware;
+use matejpal\phpmvc\middlewares\BaseMiddleware;
 
 /**
  * Class Controller
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core
+ * @package matejpal\phpmvc
 */
 
 class Controller{
@@ -18,7 +18,7 @@ class Controller{
     public string $action = "";
 
     /**
-     * @var \app\core\middlewares\BaseMiddleware[]
+     * @var \matejpal\phpmvc\middlewares\BaseMiddleware[]
      */
     protected array $middlewares = [];
     public function setLayout($layout){
@@ -34,7 +34,7 @@ class Controller{
     }
 
     /**
-     * @return \app\core\middlewares\BaseMiddleware[]
+     * @return \matejpal\phpmvc\middlewares\BaseMiddleware[]
      */
     public function getMiddlewares(): array { 
         return $this->middlewares;

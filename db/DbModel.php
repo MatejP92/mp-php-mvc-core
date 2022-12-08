@@ -1,15 +1,15 @@
 <?php
 /** User: Matej */
 
-namespace app\core\db;
-use app\core\Application;
-use app\core\Model;
+namespace matejpal\phpmvc\db;
+use matejpal\phpmvc\Application;
+use matejpal\phpmvc\Model;
 
 /**
  * Class DbModel
  * 
  * @author Matej Pal <matejpal92@gmail.com>
- * @package app\core\db
+ * @package matejpal\phpmvc\db
 */
 
 abstract class DbModel extends Model{
