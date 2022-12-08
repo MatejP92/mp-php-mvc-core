@@ -3,6 +3,8 @@
 
 namespace app\core;
 
+use app\core\db\Database;
+
 /**
  * Class Aplication
  * 
