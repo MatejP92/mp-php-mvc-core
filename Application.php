@@ -15,6 +15,9 @@ use matejpal\phpmvc\db\Database;
 
 class Application
 {
+    const EVENT_BEFORE_REQUEST = 'before_request';
+    const EVENT_AFTER_REQUEST = 'after_request';
+    protected array $eventListeners = [];
     public static string $ROOT_DIR;
 
     public string $layout = "main";
@@ -54,6 +57,7 @@ class Application
 
     public function run()
     {
+        $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
         try {
             echo $this->router->resolve();
         } catch (\Exception $e){
@@ -64,6 +68,16 @@ class Application
         }
     }
 
+    public function triggerEvent($eventName){
+        $callback = $this->eventListeners[$eventName] ?? [];
+        foreach ($callback as $callback) {
+            call_user_func($callback);
+        }
+    }
+
+    public function on($eventName, $callback){
+        $this->eventListeners[$eventName][] = $callback;
+    }
     
 
     // getter
